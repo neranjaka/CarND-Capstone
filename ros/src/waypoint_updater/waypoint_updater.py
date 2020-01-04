@@ -53,7 +53,7 @@ class WaypointUpdater(object):
     def loop(self):
         rate = rospy.Rate(PUB_FREQ)
         while not rospy.is_shutdown():
-            if self.pose and self.base_lane:
+            if self.pose and self.base_lane and self.waypoint_tree:
                 self.publish_waypoints()
             rate.sleep()
 
@@ -67,7 +67,6 @@ class WaypointUpdater(object):
         closest_idx = self.waypoint_tree.query([x, y], 1) [1]
         # The closest waypoint may actually be behind the current position
         # in which case we need to get the waypoint after that
-
         # get the closest waypoint  and the one right before it 
         closest_coord = self.waypoints_2d[closest_idx]
         prev_coord = self.waypoints_2d[closest_idx -1]

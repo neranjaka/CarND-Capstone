@@ -1,0 +1,2 @@
+#!/bin/bash
+ wget  https://storage.googleapis.com/carnd-capstone-simulator/training_images_simulator.7z

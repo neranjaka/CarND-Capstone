@@ -4,7 +4,7 @@ Team :
 
 | Name | Udacity handle | Email |
 | --- | --- | --- |
-|Neranjaka J.| Neranjaka J. | neranjake@gmail.com |
+|Neranjaka J.| Neranjaka J. | neranjaka.jayarathne@ttu.edu |
 |Prabhakar R.| | |
 |Askari Hasan | | |
 |Dae Robert | | |
